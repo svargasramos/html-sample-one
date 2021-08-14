@@ -62,7 +62,7 @@
 
                 <input type="email" placeholder="email">
 
-                <textarea name="" id="" cols="5" rows="10"></textarea>
+                <textarea name="message" id="message" rows="10"></textarea>
 
                 <input type="submit" value="enviar">
 
