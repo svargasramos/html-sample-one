@@ -60,7 +60,7 @@
 
             <form>
 
-                <input type="email" placeholder="email">
+                <input type="email" placeholder="email" name="email">
 
                 <textarea name="message" id="message" rows="10"></textarea>
 
