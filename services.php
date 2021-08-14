@@ -79,7 +79,7 @@
 	</main>	
 
     <!--Inicia pie de pagina-->
-    <?php require("./components/fotter.php")?>
+    <?php require("./components/footer.php")?>
     <!--Cierra pie de pagina-->
 
 </body>
