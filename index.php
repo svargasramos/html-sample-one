@@ -343,11 +343,11 @@ background: rgba(255, 0, 100, 1);
 
         <ul>
 
-            <a href="#"><li class="botones">Boton 1</li></a>
-            <a href="#"><li class="botones">Boton 2</li></a>
-            <a href="#"><li class="botones">Boton 3</li></a>
-            <a href="#"><li class="botones">Boton 4</li></a>
-            <a href="#"><li class="botones">Boton 5</li></a>
+            <a href="./html01.php"><li class="botones">Boton 1</li></a>
+            <a href="./html02.php"><li class="botones">Boton 2</li></a>
+            <a href="./html03.php"><li class="botones">Boton 3</li></a>
+            <a href="./Diseño-web-responsivo.php"><li class="botones">Boton 4</li></a>
+            <a href="./propied-de-ubicacion.php"><li class="botones">Boton 5</li></a>
 
         </ul>
 
