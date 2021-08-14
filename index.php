@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="shortcut icon" type="image/ico" href="./password.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./img/password.ico"/>
     <title>Home</title>
 
 </head>
