@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+
+    width: 100vw;
+    height: 100vh;
+    background: red;
+}
+
+header{
+    /* position: relative; */
+    margin: auto;
+    width: 90vw;
+    height: 100px;
+    background: yellow;
+}
+
+section{
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90vw;
+    height: calc(100vh - 150px); /* 50 footer + 100 header */
+    background: #bbb;
+    overflow-y: scroll;
+}
+
+section aside#izq{
+    /* position: relative; */
+    /* margin: auto; */
+    width: 25%;
+    min-width: 250px;
+    height: 100%;
+    background: rosybrown;
+}
+
+section article{
+    /* position: relative; */
+    /* margin: auto; */
+    width: calc(75% - 10px);
+    height: 100%;
+    background: #ddd;
+    padding: 0 5px;
+}
+
+footer{
+    /* position: relative; */
+    margin: auto;
+    width: 90vw;
+    height: 50px;
+    background: magenta;
+}
+
+.fieldset-section{
+    min-height: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.fieldset-section legend{
+    text-transform: capitalize;
+    padding: 5px;
+    background: #ccc;
+    font-size: 12px;
+    border: solid #f60 3px;
+    border-radius: 5px;
+}
+
+/* flex general start */
+
+.flex-container{
+    display: flex;
+    background-color: white !important;
+    padding: 10px;
+}
+
+.flex-item{
+    height: 50px;
+    flex: 1; /* le va a dar un ancho igual a todos */
+    background: red;
+    margin: 5px;
+}
+
+/* flex general end */
+
+
+.flex-item.item1{
+    flex: 3; /* le va a dar un ancho igual a todos */
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container.ejemplo0{
+    background-color: yellow !important;
+    flex-direction: column-reverse;
+}
+
+.flex-container.ejemplo1{
+    flex-wrap: wrap;
+}
+
+.flex-container.ejemplo1 .flex-item{
+    flex-wrap: wrap;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.flex-container.ejemplo2{
+    justify-content: space-evenly;
+}   
+.flex-container.ejemplo2 .flex-item{
+    max-width: 100px !important;
+}   

@@ -13,7 +13,7 @@
     bottom: 0;
     right: 20px;
     background: magenta;
-    z-index: 1;
+    z-index: 20;
     color: white;
     text-align: center;
     line-height: 40px;
@@ -59,7 +59,7 @@ header{
 #icono1{
     top: 42px;
     right: 120px;
-    background: blue;
+    background: #0a82ec;
 }
 
 #icono2{
@@ -88,27 +88,35 @@ nav{
     
 }
 
-.botones{
-
+nav .botones{
     float:left;
     width: 196px;
     margin: 0px 2px;
     height: 48px;
-    background:rgb(100, 0, 255);
+    background-color:rgb(88 166 192);
     color: white;
     text-align: center;
     line-height: 48px;
     font-family: 'Audiowide', cursive;
+    transition: 0.5s;
+}
+nav .botones a{
+    color: white;
+    text-decoration: none;
+}
+nav .botones a span{
+    display: block;
+    min-width: 196px;
+    min-height: 48px;
 }
 
-a .botones:hover{
-
-    background: rgba(100, 0, 255,.4);
+nav .botones:hover{
+    transform: scale(1.1)/*  rotate(5deg) */ translateY(-10px);
+    background-color: rgb(57, 9, 129);
 }
 
-a .botones:active{
-
-background: rgba(255, 0, 100, 1);
+nav .botones:active{
+    background: rgba(255, 0, 100, 1);
 }
 
 #top{
@@ -272,14 +280,17 @@ aside#der{
 
 footer{
 
-    position: relative;
+    position: fixed;
+    margin: 0px calc(50vw - 500px) !important;
     margin:20px auto;
     width: 1000px;
     height: 70px;
-    background:rgb(100, 0, 255);
+    background:rgb(88 166 192);
     text-align: center;
     line-height: 70px;
     color: white;
+    bottom: 0;
+    z-index: 10;
     
 }
 
@@ -301,3 +312,120 @@ footer{
 
 
 }
+
+
+/* gallery */
+
+section.gallery {
+    max-height: calc(100vh - 335px);/* 160header + 48nav + 110footer */
+    background: #ddd;
+    padding: 10px;
+    background-image: url(../img/tipos-de-paisaje-natural.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: 0.5s;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+section.gallery:hover h1{
+    background-color:rgba(153, 194, 204, 1);
+    box-shadow: 0 0 5px #888;
+    /* margin-top: 0; */
+    opacity: 1;
+    transform: rotateX(0deg) translateY(0px);
+}
+
+.gallery h1{
+    padding: 10px;
+    background-color:rgba(153, 194, 204, 0.5);
+    text-shadow: 3px 3px 5px #ccc;
+    min-width: 200px;
+    text-align: center;
+    /* margin-top: 500px; */
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(200px);
+}
+
+section.about, section.contact {
+    /* max-height: calc(100vh - 358px);160header + 48nav + 110footer */
+    background: #ddd;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.contact{
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 600px;
+    min-width: 300px;
+}
+.contact-wrapper{
+    border:1px solid #ced4da;
+    padding: 15px;
+    border-radius: 4px;
+    width: 100%;
+}
+.contact-wrapper .form-control{
+    display: flex;
+    flex-direction: column;
+}
+.contact-wrapper .form-control label{
+    font-size: 16px;
+    color: rgb(33, 37, 41);
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.contact-wrapper .form-control input,
+.contact-wrapper .form-control textarea{
+    font-size: 16px;
+    color: rgb(33, 37, 41);
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    margin-bottom: 8px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border:1px solid #ced4da;
+}
+.contact-wrapper .form-control textarea{
+    height: 80px;
+}
+.contact-wrapper .btn-send{
+    color: #fff;
+    border: none;;;;;
+    background-color: #007bff;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    width: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.contact-wrapper .btn-send:hover{
+    background-color: #84abd6;
+}
+
+.contact h1, h2{
+    font-size: 24px;
+    color: rgb(66, 74, 79);
+    font-weight: lighter;
+    margin-bottom: 15px;
+    margin-top: 14px;
+}
+
+.contact .image{
+    width: 100px;
+    height: 100px;
+}
+

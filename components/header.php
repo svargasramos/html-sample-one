@@ -2,9 +2,9 @@
 
     <div id="logo">Logotipo</div>
 
-    <div id="icono1" class="redes">x</div>
-    <div id="icono2" class="redes">x</div>
-    <div id="icono3" class="redes">x</div>
+    <a href="https://www.facebook.com/erickorso/" target="_blanc"><div id="icono1" class="redes"><i class="fa fa-facebook"></i></div></a>
+    <div id="icono2" class="redes"><i class="fa fa-home"></i></div>
+    <div id="icono3" class="redes"><i class="fa fa-user"></i></div>
 
 </header>
 
@@ -15,13 +15,31 @@
 <nav>
 
     <ul>
-
-        <a href="index.php"><li class="botones">Home</li></a>
-        <a href="../services.php"><li class="botones">Servicios</li></a>
-        <a href="./html03.php"><li class="botones">Galeria</li></a>
-        <a href="./Diseño-web-responsivo.php"><li class="botones">Nosotros</li></a>
-        <a href="../contact.php"><li class="botones">Contacto</li></a>
-
+        <li class="botones">
+            <a href="./">
+                <span>Home</span>
+            </a>
+        </li>
+        <li class="botones">
+            <a href="./services.php">
+                <span>Servicios</span>
+            </a>
+        </li>
+        <li class="botones">
+            <a href="./gallery.php">
+                <span>Galeria</span>
+            </a>
+        </li>
+        <li class="botones">
+            <a href="./about.php">
+                <span>Nosotros</span>
+            </a>
+        </li>
+        <li class="botones">
+            <a href="./contact.php">
+                <span>Contacto</span>
+            </a>
+        </li>
     </ul>
 
 </nav>
