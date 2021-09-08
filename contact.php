@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="shortcut icon" type="image/ico" href="./img/password.ico"/>
-    <title>Contacto</title>
-
+    <?php require("./components/head.php")?>
+    <title>Contact</title>
 </head>
 <body>
 
@@ -22,57 +14,39 @@
 
     <!--Cierra barra de navegacion-->
 
-    <!--Inicia parte superior-->
-
-    <div id="top">
-
-        <ul>
-
-            <li>
-                <img src="./img/web.webp" width="100" />
-                <h1>lorem ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <img src="./img/tipos-de-paisaje-natural.jpg" width="100" />  
-              <h1>lorem ipsum</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </li>
-            <li>
-                <img src="./img/paisaje1.jfif" width="100"/>
-                <h1>lorem ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </li>
-
-        </ul>
-
-    </div>
-
-    <!--Cierra parte superior-->
-
-    <!--Inicia Seccion-->
-
-    <section>
-
-        <aside id="der">
-
-            <h1>Contacto</h1>
-
-            <form>
-
-                <input type="email" placeholder="email" name="email">
-
-                <textarea name="message" id="message" rows="10"></textarea>
-
-                <input type="submit" value="enviar">
-
-            </form>
-
-        </aside>
-
-    </section>
-
-    <!--Cierra Seccion-->
+    <form method="get">
+        <section class="main contact">
+            <!-- <br/>
+            <hr/> -->
+            <!--  -->
+                <div class="contact-wrapper">
+                    <h2>Contact Us</h2>
+        
+                    <div class="form-control">
+                        <label>Your name</label>
+                        <input type="text" name="name"/>
+                    </div>
+                    
+                    <div class="form-control">
+                        <label>Your email address</label>
+                        <input type="email" name="email"/>
+                    </div>
+                    
+                    <div class="form-control">
+                        <label>Your message</label>
+                        <!-- <textarea rows="5" cols="10"></textarea> -->
+                        <textarea name="message"></textarea>
+                    </div>
+                    <input class="btn-send" type="submit" value="Enviar">
+                    <!-- <button class="btn-send">Enviar</button> -->
+                    <!-- <div class="btn-send" style="text-align: center">Enviar</div> -->
+                    <!-- <a href="www.google.com" class="btn-send">Enviar</a> -->
+        
+                </div>
+            
+            <!-- <img class="image" src="./img/diamond.svg"/> -->
+        </section>
+    </form>
 
     <!--Inicia pie de pagina-->
     <?php require("./components/footer.php")?>
