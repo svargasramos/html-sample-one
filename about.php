@@ -16,7 +16,29 @@
     <!--Cierra barra de navegacion-->
 
     <section class="main about">
-        <h1>About Us</h1>
+        <h1> 
+            <div id="top">
+
+                <ul>
+
+                    <li>
+                        <img src="./img/web.webp" width="100" />
+                        <h1>Nosotros</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <img src="./img/tipos-de-paisaje-natural.jpg" width="100" />  
+                        <h1>Misión</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <img src="./img/paisaje1.jfif" width="100"/>
+                        <h1>Visión</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </li>
+
+                </ul>
+    </h1>
     </section>
 
     <!--Inicia pie de pagina-->

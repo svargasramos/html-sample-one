@@ -1,10 +1,14 @@
 <header>
 
-    <div id="logo">Logotipo</div>
+    <div id="logo">
+        <img src="./img/logo.png" alt="logo">
+    </div>
 
-    <a href="https://www.facebook.com/erickorso/" target="_blanc"><div id="icono1" class="redes"><i class="fa fa-facebook"></i></div></a>
-    <div id="icono2" class="redes"><i class="fa fa-home"></i></div>
-    <div id="icono3" class="redes"><i class="fa fa-user"></i></div>
+    <div class="redes-wrapper">
+        <a href="https://www.facebook.com/erickorso/" target="_blanc"><div id="icono1" class="redes"><i class="fa fa-facebook"></i></div></a>
+        <div id="icono2" class="redes"><i class="fa fa-instagram"></i></div>
+        <div id="icono3" class="redes"><i class="fa fa-twitter"></i></div>
+    </div>
 
 </header>
 

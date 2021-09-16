@@ -28,49 +28,71 @@ header{
     margin:20px auto;
     width: 1000px;
     height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #logo, .logo__flex{
-
-    position: absolute;
-    top: 30px;
-    left:30px;
     width: 200px;
-    height: 60px;
-    font-size: 50px;
-    text-align: center;
-    line-height: 60px;
-    font-family: 'Audiowide', cursive;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img{
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.5s;
+}
+#logo img:hover{
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(1.2);
+}
+
+.redes-wrapper{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes-wrapper a{
+    
+    text-decoration: none;
 }
 
 .redes{
-
-    position: absolute;
-    width: 42px;
-    height: 42px;
     background: #ccc;   
     border-radius: 100%;
     text-align: center;
-    line-height: 42px;
     color: white;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 #icono1{
-    top: 42px;
-    right: 120px;
+    /* top: 42px;
+    right: 120px; */
     background: #0a82ec;
 }
 
 #icono2{
-    top: 42px;
-    right: 69px;
+    /* top: 42px;
+    right: 69px; */
     background: green;
 }
 
 #icono3{
-    top: 42px;
-    right: 19px;
+    /* top: 42px;
+    right: 19px; */
     background: red;
 }
 
@@ -147,6 +169,14 @@ nav .botones:active{
 #top ul li img{
     border-radius: 100%;
     height: 100px;
+    transition: 0.8s;
+
+}
+
+#top ul li img:hover{
+    transform: scale(1.2)rotate(5deg);
+    filter: grayscale(100%);
+    
 }
 
 #top ul li h1{
@@ -155,8 +185,9 @@ nav .botones:active{
 
 #top ul li p{
     font-size: 14px;
-    width: 75%;
     margin: 10px;
+    text-align: center;
+    padding: 0 75px;
 }
 
 
@@ -317,7 +348,7 @@ footer{
 /* gallery */
 
 section.gallery {
-    max-height: calc(100vh - 335px);/* 160header + 48nav + 110footer */
+    height: calc(100vh - 335px);/* 160header + 48nav + 110footer */
     background: #ddd;
     padding: 10px;
     background-image: url(../img/tipos-de-paisaje-natural.jpg);
@@ -359,6 +390,7 @@ section.about, section.contact {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: calc(100vh - 318px);
 }
 section.contact{
     background-color: white;
@@ -367,6 +399,7 @@ section.contact{
     padding: 10px;
     max-width: 600px;
     min-width: 300px;
+    height: calc(100vh - 300px);
 }
 .contact-wrapper{
     border:1px solid #ced4da;
