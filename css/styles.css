@@ -28,49 +28,71 @@ header{
     margin:20px auto;
     width: 1000px;
     height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #logo, .logo__flex{
-
-    position: absolute;
-    top: 30px;
-    left:30px;
     width: 200px;
-    height: 60px;
-    font-size: 50px;
-    text-align: center;
-    line-height: 60px;
-    font-family: 'Audiowide', cursive;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img{
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.5s;
+}
+#logo img:hover{
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(1.2);
+}
+
+.redes-wrapper{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes-wrapper a{
+    
+    text-decoration: none;
 }
 
 .redes{
-
-    position: absolute;
-    width: 42px;
-    height: 42px;
     background: #ccc;   
     border-radius: 100%;
     text-align: center;
-    line-height: 42px;
     color: white;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 #icono1{
-    top: 42px;
-    right: 120px;
+    /* top: 42px;
+    right: 120px; */
     background: #0a82ec;
 }
 
 #icono2{
-    top: 42px;
-    right: 69px;
+    /* top: 42px;
+    right: 69px; */
     background: green;
 }
 
 #icono3{
-    top: 42px;
-    right: 19px;
+    /* top: 42px;
+    right: 19px; */
     background: red;
 }
 
@@ -85,6 +107,7 @@ nav{
     margin: auto;
     width: 1000px;
     height: 48px;
+    z-index: 100;
     
 }
 
@@ -93,7 +116,7 @@ nav .botones{
     width: 196px;
     margin: 0px 2px;
     height: 48px;
-    background-color:rgb(88 166 192);
+    background-color: rgb(88 166 192);
     color: white;
     text-align: center;
     line-height: 48px;
@@ -119,19 +142,45 @@ nav .botones:active{
     background: rgba(255, 0, 100, 1);
 }
 
-#top{
+.botones:hover ul {
+    opacity: 1;
+} 
 
+nav .sub-menu{
+    background-color: rgb(88 166 192);
+    transition: 0.5s;
+    opacity: 0;
+}
+nav .sub-menu__item{
+    border-top: solid white 1px;
+    margin-bottom: 2px;
+    transition: 0.5s;
+}
+nav .sub-menu__item:hover {
+    background-color: rgba(57, 9, 129, 0.95);
+}
+
+nav .sub-menu__btn{
+    cursor: zoom-in;
+}
+
+.sub-menu__item a{
+    display: block;
+    min-width: 196px;
+    min-height: 48px;
+}
+
+#top{
     position: relative;
     margin:20px auto;
     width: 1000px;
-    height: 192px;     
+    height: 192px;
 }
 
 #top ul{
 
     width: 1010px;
     height: 192px;
-    
 }
 
 #top ul li{
@@ -139,7 +188,7 @@ nav .botones:active{
     float: left;
     width: 326px;
     height: 192px;
-    margin-right: 10px;           
+    margin-right: 10px;
     text-align: center;
 
 }
@@ -147,16 +196,24 @@ nav .botones:active{
 #top ul li img{
     border-radius: 100%;
     height: 100px;
+    transition: 0.8s;
+
+}
+
+#top ul li img:hover{
+    transform: scale(1.2)rotate(5deg);
+    filter: grayscale(100%);
 }
 
 #top ul li h1{
-    font-family: 'Audiowide', cursive;  
+    font-family: 'Audiowide', cursive;
 }
 
 #top ul li p{
     font-size: 14px;
-    width: 75%;
     margin: 10px;
+    text-align: center;
+    padding: 0 75px;
 }
 
 
@@ -317,7 +374,7 @@ footer{
 /* gallery */
 
 section.gallery {
-    max-height: calc(100vh - 335px);/* 160header + 48nav + 110footer */
+    height: calc(100vh - 335px);/* 160header + 48nav + 110footer */
     background: #ddd;
     padding: 10px;
     background-image: url(../img/tipos-de-paisaje-natural.jpg);
@@ -359,6 +416,7 @@ section.about, section.contact {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: calc(100vh - 318px);
 }
 section.contact{
     background-color: white;
@@ -367,6 +425,7 @@ section.contact{
     padding: 10px;
     max-width: 600px;
     min-width: 300px;
+    height: calc(100vh - 300px);
 }
 .contact-wrapper{
     border:1px solid #ced4da;
