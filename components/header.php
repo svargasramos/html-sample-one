@@ -18,4 +18,5 @@
 
 <!--Inicia barra de navegacion-->
 
-<?php require('nav.php'); ?>
+<?php require('nav.php');
+?>
