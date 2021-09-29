@@ -1,4 +1,4 @@
-<ul>
+<ul class="about-list">
 
     <li>
         <img src="./img/web.webp" width="100" />

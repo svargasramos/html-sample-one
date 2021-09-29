@@ -176,21 +176,27 @@ nav .sub-menu__btn{
     width: 1000px;
     height: 192px;
 }
-
-#top ul{
-
-    width: 1010px;
-    height: 192px;
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
 }
 
-#top ul li{
+.about-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1010px;
+}
 
-    float: left;
-    width: 326px;
+.about-list li{
+    min-width: 320px;
+    max-width: calc(100% / 3);
     height: 192px;
-    margin-right: 10px;
     text-align: center;
-
 }
 
 #top ul li img{
@@ -218,7 +224,6 @@ nav .sub-menu__btn{
 
 
 section{
-
     position: relative;
     margin: auto;
     width: 1000px;
@@ -226,10 +231,6 @@ section{
 }
 
 aside#izq{
-
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 200px;
     height: 453px;
 }
@@ -237,11 +238,11 @@ aside#izq{
 #izq ul li{
     background-color: #aaa;
     padding: 10px;
-    margin: 2px 10px;
+    margin: 2px;
     list-style: square;
     list-style-position: inside;
     list-style-image: url("./img/bullet.jpg");
-
+    border: solid blue;
     }
 
     #izq ul li a{
@@ -250,10 +251,6 @@ aside#izq{
     }
 
 article{
-
-    position: absolute;
-    left: 200px;
-    top: 0;
     width: 600px;
     height: 453px;
 }
@@ -265,24 +262,27 @@ article h1{
     margin: 20px;
 }
 
-article p img{
+article .article-content{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    float: left;
-    margin-right: 20px;
+article img{
+    margin: 5px 20px;
+    flex: 1;
+    max-width: 33%;
+    min-width: 150px;
 }
 
 article p{
-
+    flex: 3;
     margin: 5px 20px;
     font-size: 14px;
     text-align: justify;
+    min-width: 250px;
 }
 
 aside#der{
-
-    position: absolute;
-    right: 0;
-    top: 0;
     width: 200px;
     height: 453px; 
 
@@ -372,10 +372,44 @@ footer{
         width: auto;
         height: 70px;
     }
-    #top{
-        width: 100vw;
+    #top, section{
+        width: 100%;
+        height: auto !important;
     }
 
+    .article-content{
+         flex-direction: column-reverse;
+         min-height: 300px;
+    }
+
+    .home{
+        width: 100%;
+    }
+    .home article img{
+        flex: 3;
+        min-width: inherit;
+        width: 100%;
+        max-height: 100%;
+        margin: 10px auto;
+        height: auto;
+    }
+
+    aside#izq, aside#der {
+        width: 80%;
+        height: auto;
+        margin: 10px;
+    }
+
+    section.about{
+        height: auto !important;
+    }
+    .about-list{
+        width: 100%;
+    }
+    .about-list li{
+         height: auto;
+         margin: 20px;
+    }
     nav{
         width: 100%;
         height: auto;
@@ -450,7 +484,6 @@ section.gallery:hover h1{
     transition: 0.5s;
     transform: translateY(200px);
 }
-
 section.about, section.contact {
     /* max-height: calc(100vh - 358px);160header + 48nav + 110footer */
     background: #ddd;
