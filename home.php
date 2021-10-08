@@ -1,4 +1,4 @@
-<section>
+<section class="home">
 
     <aside id="izq">
         <ul>
@@ -14,9 +14,14 @@
 
     <article>
         <h1>Lorem Impsum</h1>
-        <p><img src="./img/paisaje1.jfif" width="250">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
-            quaerat cumque, modi eum sed numquam eos porro temporibus at neque, dolor sapiente ut minus accusamus
-            consectetur placeat tempore aliquam nobis?</p>
+        <div class="article-content">
+            <img src="./img/paisaje1.jfif">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+                quaerat cumque, modi eum sed numquam eos porro temporibus at neque, dolor sapiente ut minus accusamus
+                consectetur placeat tempore aliquam nobis?
+            </p>
+        </div>
     </article>
 
     <aside id="der">
