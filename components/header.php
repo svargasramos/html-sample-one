@@ -1,7 +1,7 @@
 <header>
 
     <div id="logo">
-        <img src="./img/logo.png" alt="logo">
+        <img src="<?php echo BASE_URL; ?>img/logo.png" alt="logo">
     </div>
 
     <div class="redes-wrapper">

@@ -144,6 +144,7 @@ nav .botones:active{
 
 .botones:hover ul {
     opacity: 1;
+    overflow: inherit;
 } 
 
 nav .sub-menu{
@@ -162,6 +163,11 @@ nav .sub-menu__item:hover {
 
 nav .sub-menu__btn{
     cursor: zoom-in;
+    overflow: hidden;
+}
+
+nav .sub-menu__btn:hover{
+    overflow: inherit;
 }
 
 .sub-menu__item a{
@@ -182,6 +188,47 @@ nav .sub-menu__btn{
     justify-content: center;
     align-items: flex-start;
     height: auto;
+}
+
+.excercise__wrapper{
+    border: solid red;
+    margin-bottom: 20px;
+}
+
+.excercise__wrapper__list{
+    border: solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.excercise__wrapper__item{
+    border: solid black;
+    width: 100px;
+    height: 100px;
+    margin: 10px 25px;
+}
+
+.excercise__wrapper--bottom{
+    border:solid gray ;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+}
+
+.excercise__item{
+    border:solid brown ;
+    flex: 1;
+    max-width: 100px;
+    height: 100px;
+    margin: 15px;
+}
+
+.excercise__item--center{
+    border:solid orange ;
+    width: auto;
+    max-width: inherit;
 }
 
 .about-list{
