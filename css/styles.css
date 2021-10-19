@@ -190,10 +190,54 @@ nav .sub-menu__btn:hover{
     height: auto;
 }
 
-.excercise__wrapper{
+.excercise{
+    padding: 10px 0;
+}
+.excercise__wrapper1{
     border: solid red;
     margin-bottom: 20px;
+    min-height: 150px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.excercise__wrapper__parent1{
+    border: solid blue;
+    height: 100px;
+    width: 100px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.excercise__wrapper__parent2{
+    background-color:blue;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin: 0 20px;
+}
+
+.excercise__wrapper__child1{
+    border: solid greenyellow;
+    height: 50px;
+    width: 50px;
+}
+
+.excercise__wrapper__child2{
+    background: greenyellow;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* margin-left: 50%;
+    margin-top: 50%;
+    transform: translateX(-50%) translateY(-50%); */
+}
+
 
 .excercise__wrapper__list{
     border: solid blue;
@@ -229,6 +273,7 @@ nav .sub-menu__btn:hover{
     border:solid orange ;
     width: auto;
     max-width: inherit;
+    background-color: blue;
 }
 
 .about-list{
